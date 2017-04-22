@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="MAMG">
+	<meta name="keywords" content="irregular verbs, english, game, study, learn">
+	<!-- include the script -->
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/alertify.min.js"></script>
+	<script src="js/verbos.js"></script>
+	<script src="https://use.fontawesome.com/013a643c76.js"></script>
+	<!-- include the style -->
+	<link rel="stylesheet" href="css/alertify.min.css">
+	<!-- include a theme -->
+	<link rel="stylesheet" href="css/themes/alertify.default.css">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Patrick+Hand" rel="stylesheet">
+</head>
+<body>
+<div class="w3-container w3-light-grey">
+	<header class="w3-amber w3-center" id="cabecera">
+		<div id="logo"></div>
+		<div id="titulocabecera">
+			<h1>Irregular Verbs</h1>
+			<p>Practica los verbos irregulares.</p>
+		</div>
+		<div id="puntos">
+			<p id="titpuntos">PUNTOS</p>
+			<p id="puntuacion"></p>
+		</div>
+	</header>
+	<div class="contenedor1">
+	<!-- ESTE ES EL CUADRO QUE SALE AL PRINCIPIO PARA ELEGIR NIVEL-->
+		<div id="menunivel" >
+			<header class="cabMenu"><h3>Selecciona tu nivel:</h3></header>
+			<input class="w3-button w3-green" type="button" id="btnNivel1" onclick="aplicaNivel('1');" value="PRINCIPIANTE"><br>
+			<input class="w3-button w3-yellow" type="button" id="btnNivel2" onclick="aplicaNivel('2');" value="INTERMEDIO"><br>
+			<input class="w3-button w3-red" type="button" id="btnNivel3" onclick="aplicaNivel('3');" value="EXPERTO"><br>
+		</div>
+	<!--    -->
+	</div>
+	<div class="contenedor2">
+	<!-- ESTE ES EL CUADRO QUE SALE AL PRINCIPIO PARA ELEGIR NIVEL-->
+		<div class="invisible" id="tarjetaVerbo" ondrop="drop(event)" ondragover="allowDrop(event);">
+			<header id="cab" class="w3-container w3-blue-grey"><h3 id="verboSP">Pulsa PLAY</h3></header>
+			<div id="div1" class="w3-container">
+				<div id="div11"></div>
+			<!--  AQUÍ SE DEJAN CAER LAS TARJETAS-->
+				
+			</div>
+			<button id="jugar" class="w3-button w3-block w3-blue">PLAY</button>
+		</div>
+		<div class="w3-quarter invisible" id="diventrada">
+			<p>Please, write here the infinitive and then click OK:</p>
+			<input type="text" id="infinitivoESP">
+			<button id="btnOK" class="w3-button w3-blue">Ok</button>
+		</div>
+		<div id="resultado">
+			<div id="ok" ><i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i></div>
+			<p id="intentos">You can try x times</p>
+		</div>
+	</div>
+	<br>
+	<div id="div2" class="w3-container w3-blue-grey invisible" ondrop="drop(event);" ondragover="allowDrop(event);">
+		<!--  AQUÍ SALEN LAS TARJETAS DE LOS VERBOS-->
+	</div>
+</div>
+
+</body>
+</html>

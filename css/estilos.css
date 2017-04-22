@@ -1,0 +1,142 @@
+/*font-family: 'Pacifico', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Patrick Hand', cursive;*/
+html, body{
+	font-family: 'Amatic SC', cursive;
+	font-size:1.3em;
+}
+
+h1,h2,h3 {
+	font-size:2em;
+}
+
+.card {
+	width:137px;
+	height:95px;
+	padding: 30px 5px;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+	text-align:center;
+	font-family: 'Patrick Hand', cursive;
+
+}
+.contenedor1{
+	display:flex;
+	justify-content:center;
+}
+.contenedor2{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row;
+}
+#cabecera{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+}
+.infinitivo{
+	background-color:lightblue;
+}
+
+.pasado{
+	background-color:yellow;
+}
+
+.participio{
+	background-color:coral;
+}
+
+.invisible{
+	display:none;
+}
+.fa-thumbs-o-up{
+	font-size:3em;
+	color:#4CAF50; /*Verde*/
+}
+.fa-thumbs-o-down{
+	font-size:3em;
+	color:#f44336; /*rojo*/
+}
+
+.cabMenu {
+	width:100%;
+	background-color:#2196F3;
+	text-align:left;
+	color:#fff;
+}
+#menunivel{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	border:4px solid #2196F3;
+}
+#titulocabecera{
+	width:60%;
+	font-family: 'Pacifico', cursive;
+	justify-content: center;
+	//border:1px solid black;
+}
+#puntos, #logo{
+	width:20%;
+}
+
+#puntos{
+	font-size:2em;
+	border:3px solid black;
+	border-radius:20px;
+	background-color:black;
+}
+
+#titpuntos{
+	margin-bottom:0;
+	margin-top:0;
+	color:#ffc107;
+	padding:0;
+	line-height: 0.7;
+}
+#puntuacion{
+	margin-top:10px;
+	background-color:#ffc107;
+}
+
+#div1 {
+	display:flex;
+	flex-direction:row;
+	width: 500px;
+	height: 230px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+}
+#cab, #jugar{
+	width: 500px;
+}
+
+#div2 {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 270px;
+	padding: 10px;
+}
+
+#resultado{
+	text-align:center;
+	width:33%;
+}
+
+#intentos {
+	font-family: 'Patrick Hand', cursive;
+	text-align:center;
+	background-color:#ffeb3b;
+	border-radius:30px;
+	border:1px solid #ffeb3b;
+	visibility:hidden;
+}
+
+#ok{
+	visibility:hidden;
+	position:relative;
+	top:50%;
+}
