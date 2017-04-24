@@ -1,4 +1,5 @@
 const NUMINTENTOS = 3;
+const MAXNUMVERBOS=5;
 var arrVerbos = [];
 
 var arrVerbos1 = [{infinitive:"be" ,past:"was / were" ,participle:"been" ,verbo:"ser o estar" ,estado:false},
@@ -350,7 +351,7 @@ var indice; //índice del verbo elegido en el array de verbos
 var intentos=0; //intentos fallidos
 var numfallos=0; //fallos
 var numverbosmostrados=0; //número de verbos que se van jugando. Máximo 30.
-const MAXNUMVERBOS=10;
+
 //Al pulsar el PLAY empieza el juego mostrando un verbo en español
 function empiezaJuego(){
 	numverbosmostrados++;
@@ -510,21 +511,7 @@ function restaPuntos(){
  }
 
  function inicializa(){
- 	puntos=0;
- 	intentos=0;
- 	numverbosmostrados=0;
- 	for (var i=0; i<arrVerbos.length; i++){
- 		arrVerbos[i].estado=false;
- 	}
- 	//Mostrar el menú de inicio y esconder el resto
- 	$("#menunivel").slideDown("slow");
-	$("#puntuacion").html("0");
-	$("#div2").css("visibility","hidden");
-	$("#div1").css("visibility","hidden");
-	$("#tarjetaVerbo").css("visibility","hidden");
-	$("#diventrada").css("visibility","hidden");
-	$("#resultado").css("display","none");
-
+ 	location.reload();
  }
 
 function gameOver(){
@@ -537,5 +524,8 @@ function gameOver(){
 		else{
 			alertify.alert("GOOD!!", texto + " You're getting better!");
 		}
-		inicializa();
+		//alertify.confirm("Wanna play again?");
+		// if (alertify.confirm("Wanna play again?")){
+		// 	inicializa();
+		// }
 }
